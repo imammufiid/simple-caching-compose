@@ -27,7 +27,7 @@ android {
             useSupportLibrary true
         }
 
-        buildConfigField("String", "STOCK_BASE_URL", "\"alphavantage.co\"")
+        buildConfigField("String", "STOCK_BASE_URL", "\"https://alphavantage.co\"")
         buildConfigField("String", "STOCK_API_KEY", "\"${buildProperties.getProperty('stockApiKey')}\"")
         buildConfigField("int", "LOCAL_DATABASE_VERSION", "${buildProperties.getProperty('roomDatabaseVersion')}")
     }
